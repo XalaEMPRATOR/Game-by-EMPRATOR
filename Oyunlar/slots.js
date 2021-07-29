@@ -25,7 +25,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 .setDescription(`🤔 The amount you entered is not a valid number !?`))
  let kazandin = miktar*3   
-  let slots = ["<:emoji_64:868551201233465384>","<:emoji_67:868551589525336074>","<:emoji_66:868551554993651813>","<:emoji_65:868551525935493180>"];
+  let slots = ["<:emoji_47:869537744836255764>","<:emoji_46:869537716679888907>","<:emoji_46:869537716679888907>"];
   //
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   let result1 = Math.floor((Math.random() * slots.length));
@@ -47,14 +47,14 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
   if (slots[result1] === slots[result2] && slots[result2] === slots[result3] ) {
     var text2 = `**
     ___SLOTS___  
-|<a:emoji_63:868550466781470781><a:emoji_63:868550466781470781><a:emoji_63:868550466781470781>|${message.author.username}
+|<a:emoji_55:869537420327157790><a:emoji_55:869537420327157790><a:emoji_55:869537420327157790>|${message.author.username}
 |                  |
 |                  |**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
               msg.edit(`**
     ___SLOTS___  
-|${slots[result1]}${slots[result2]}${slots[result3]}${message.author.username}<:emoji_64:868542517493268500> ${kazandin}+
+|${slots[result1]}${slots[result2]}${slots[result3]}${message.author.username}💵 ${kazandin}+
 |                  |
 |                  |**`,true);
             }, 3500);
@@ -65,14 +65,14 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
   } else {
     var text3 = `**
     ___SLOTS___  
-|<a:emoji_63:868550466781470781><a:emoji_63:868550466781470781><a:emoji_63:868550466781470781>|${message.author.username}
+|<a:emoji_55:869537420327157790><a:emoji_55:869537420327157790><a:emoji_55:869537420327157790>|${message.author.username}
 |                  |
 |                  |**`;
           message.channel.send(text3).then(msg => {
             setTimeout(() => {
               msg.edit(`**
     ___SLOTS___  
-|${slots[result1]}${slots[result2]}${slots[result3]}|${message.author.username}<:emoji_64:868542517493268500> ${miktar}-
+|${slots[result1]}${slots[result2]}${slots[result3]}|${message.author.username}💵 ${miktar}-
 |                  |
 |                  |**`, true);
             }, 3500);
