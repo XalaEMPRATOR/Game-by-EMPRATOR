@@ -8,7 +8,7 @@ const express = require('express');
 const ayarlar = require('./ayarlar.json');
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.login('ODY2NzM0MjgxNzYwODMzNTU2.YPW3Mw.X9hBzZ0HZfEoDDgOBMc9kRMT35E')
+client.login('ODYzMzYwMTQyMDg2NjM1NTUw.YOlwyg.Jd-znc4dX6idHgzSH_yHQvrog-k')
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 
 
@@ -22,7 +22,7 @@ require('./util/eventLoader.js')(client);
 
 //===============================================================================\\
 client.on('ready', async () => {
- client.user.setActivity(`Shelp | Server,${client.guilds.cache.size}`, { type:'PLAYING' })
+ client.user.setActivity(`Update`, { type:'PLAYING' })
 });
 //===============================================================================\\
 client.on("message", emprator => {
