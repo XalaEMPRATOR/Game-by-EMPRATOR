@@ -22,7 +22,7 @@ require('./util/eventLoader.js')(client);
 
 //===============================================================================\\
 client.on('ready', async () => {
- client.user.setActivity(`Update`, { type:'PLAYING' })
+ client.user.setActivity(`Shelp`, { type:'PLAYING' })
 });
 //===============================================================================\\
 client.on("message", emprator => {
@@ -93,21 +93,13 @@ const embed = new Discord.MessageEmbed()
 🎮┇coinflip(cf) - slots(s)
 🎮┇Skull(sk) - fish(f)
 
-**‌🏅 - Rank Commands
-🏅┇rank(r) - top(t)
-
 **⚙️ - Moderation Commands**
 ⚙️┇lock - unlock
 ⚙️┇server - kick
 ⚙️┇clear - role
 
-**💮 - Gif Commands**
-💮┇anime - animel - boy
-💮┇girl - baby - coulpe
-💮┇smoking - sad - neon - emoji
-
 📎┇Link
-[Support Bot](https://discord.gg/SyxSfp5dMQ) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=863360142086635550&permissions=8&scope=bot) - [YouTube](https://www.youtube.com/watch?v=EIf67Y3KFPc) - [Website](https://bit.ly/SkullBots)
+[Support Bot](https://discord.gg/SyxSfp5dMQ) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=863360142086635550&permissions=8&scope=bot)
 `)
        message.channel.send(embed)
 
@@ -197,7 +189,6 @@ ${client.guilds.cache.reduce((a, g) => a + g.memberCount, 0)}
 > **Owner Bot** :
 <@782911020527517727>
 > **Owner Bot**
-<@776494689703559208>
 > **Prefix Bot** :
 S`);
     message.channel.send(embed);
@@ -248,13 +239,11 @@ let help = new Discord.MessageEmbed()
       .setThumbnail(`https://media.discordapp.net/attachments/855773790184931339/868417068951801886/1615058769329.jpg`)
       .setAuthor(client.user.username, client.user.avatarURL())
       .setDescription(`
-<a:emoji_48:850045260028575784> | Skull Prefix (S)
+➡️ | Skull Prefix (S)
       
-<a:emoji_48:850045260028575784> | Skull [Support](https://discord.gg/SyxSfp5dMQ)
+➡️ | Skull [Support](https://discord.gg/SyxSfp5dMQ)
 
-<a:emoji_48:850045260028575784> | Skull [Invite](https://discord.com/api/oauth2/authorize?client_id=863360142086635550&permissions=27664&scope=bot)
-
-<a:emoji_48:850045260028575784> | Skull [Website](https://bit.ly/SkullBots)`)
+➡️ | Skull [Invite](https://discord.com/api/oauth2/authorize?client_id=863360142086635550&permissions=27664&scope=bot)`)
 
     message.channel.send(help);
   }
